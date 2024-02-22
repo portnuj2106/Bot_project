@@ -18,13 +18,6 @@ from telegram.ext import (
 
 from handlers.user_handlers import CustomContext, start, delete, echo
 
-# Enable logging
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
-)
-logging.getLogger("httpx").setLevel(logging.WARNING)
-
-logger = logging.getLogger(__name__)
 
 URL = "https://3399-46-63-28-245.ngrok-free.app"
 ADMIN_CHAT_ID = 123456
